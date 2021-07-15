@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
+import Navbar from './components/container/Navbar';
+import Intro from './components/container/Intro';
+import Feature from './components/container/Feature';
+import MidPart1 from './components/container/Mid1';
+import MidPart2 from './components/container/Mid2';
+import Footer from './components/container/Footer';
+import ToDoList from './components/container/toDoList/ToDoList';
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar />
+    <Intro />
+    <ToDoList />
+    <Feature />
+    <MidPart1 />
+    <MidPart2 />
+    <Footer />
+  </>
   );
 }
 
